@@ -156,8 +156,8 @@ overrides:
   proxy-addr: 2.0.8
   source-map-js: 1.2.2
   uuid: 11.1.1
-  braces: github:akahungryy/braces#d44b9b1ee12e7804d4232d5a47a4a0c61d2fbefe
-  node-forge: github:Krysthyan/forge#ceba34402e329f0365134f23fe19898756527d65
+  braces: 3.0.3
+  node-forge: 1.4.0
 
 importers:
 
@@ -2432,10 +2432,9 @@ packages:
     resolution: {integrity: sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ==}
     engines: {node: 20 || >=22}
 
-  braces@git+https://git@github.com:akahungryy/braces.git#d44b9b1ee12e7804d4232d5a47a4a0c61d2fbefe:
-    resolution: {commit: d44b9b1ee12e7804d4232d5a47a4a0c61d2fbefe, repo: git@github.com:akahungryy/braces.git, type: git}
-    version: 3.0.3
-    engines: {node: '>=8.3'}
+  braces@3.0.3:
+    resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
+    engines: {node: '>=8'}
 
   browserslist@4.28.9:
     resolution: {integrity: sha512-EWazOblFYUvlGZcfGhPUPmYh3nikUxBVb+y9MJun5f3hBi812X+8MSQTujLBtgK3cf51fJWbWfOjyeO954d+Eg==}
@@ -3896,9 +3895,8 @@ packages:
       encoding:
         optional: true
 
-  node-forge@git+https://git@github.com:Krysthyan/forge.git#ceba34402e329f0365134f23fe19898756527d65:
-    resolution: {commit: ceba34402e329f0365134f23fe19898756527d65, repo: git@github.com:Krysthyan/forge.git, type: git}
-    version: 1.4.1-0
+  node-forge@1.4.0:
+    resolution: {integrity: sha512-LarFH0+6VfriEhqMMcLX2F7SwSXeWwnEAJEsYm5QKWchiVYVvJyV9v7UDvUv+w5HO23ZpQTXDv/GxdDdMyOuoQ==}
     engines: {node: '>= 6.13.0'}
 
   node-int64@0.4.0:
@@ -4395,7 +4393,6 @@ packages:
   recharts@2.15.4:
     resolution: {integrity: sha512-UT/q6fwS3c1dHbXv2uFgYJ9BMFHu3fwnd7AYZaEQhXuYQ4hgsxLvsUXzGdKeZrW5xopzDCvuA2N41WJ88I7zIw==}
     engines: {node: '>=14'}
-    deprecated: 1.x and 2.x branches are no longer active. Bump to Recharts v3 to receive latest features and bugfixes. See https://github.com/recharts/recharts/wiki/3.0-migration-guide
     peerDependencies:
       react: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -5601,7 +5598,7 @@ snapshots:
       glob: 13.0.6
       lan-network: 0.2.1
       multitars: 1.0.2
-      node-forge: git+https://git@github.com:Krysthyan/forge.git#ceba34402e329f0365134f23fe19898756527d65
+      node-forge: 1.4.0
       npm-package-arg: 11.0.3
       ora: 3.4.0
       picomatch: 4.0.7
@@ -5637,7 +5634,7 @@ snapshots:
 
   '@expo/code-signing-certificates@0.0.6':
     dependencies:
-      node-forge: git+https://git@github.com:Krysthyan/forge.git#ceba34402e329f0365134f23fe19898756527d65
+      node-forge: 1.4.0
 
   '@expo/config-plugins@57.0.10(typescript@6.0.3)':
     dependencies:
@@ -7585,7 +7582,7 @@ snapshots:
     dependencies:
       balanced-match: 4.0.4
 
-  braces@git+https://git@github.com:akahungryy/braces.git#d44b9b1ee12e7804d4232d5a47a4a0c61d2fbefe:
+  braces@3.0.3:
     dependencies:
       fill-range: 7.1.1
 
@@ -9103,7 +9100,7 @@ snapshots:
 
   micromatch@4.0.8:
     dependencies:
-      braces: git+https://git@github.com:akahungryy/braces.git#d44b9b1ee12e7804d4232d5a47a4a0c61d2fbefe
+      braces: 3.0.3
       picomatch: 2.3.2
 
   mime-db@1.52.0: {}
@@ -9165,7 +9162,7 @@ snapshots:
     dependencies:
       whatwg-url: 5.0.0
 
-  node-forge@git+https://git@github.com:Krysthyan/forge.git#ceba34402e329f0365134f23fe19898756527d65: {}
+  node-forge@1.4.0: {}
 
   node-int64@0.4.0: {}
 
