@@ -9,6 +9,8 @@ import { InstallTip } from '@/components/InstallTip';
 import { useBreakpoint } from '@/hooks/useBreakpoint';
 import { questions, topics } from '@/data/questions';
 
+const featuredTopics = ['actualidad', 't08', 't10'].map((id) => topics.find((topic) => topic.id === id)).filter((topic): topic is NonNullable<typeof topic> => Boolean(topic));
+
 export default function HomeScreen() {
   const colors = useColors();
   const router = useRouter();
@@ -75,7 +77,7 @@ export default function HomeScreen() {
         </Pressable>
       </View>
       <Grid>
-      {topics.slice(0, 3).map((topic) => (
+      {featuredTopics.map((topic) => (
         <Pressable
           key={topic.id}
           onPress={() => router.push({ pathname: '/quiz', params: { mode: 'topic', topics: topic.id } })}

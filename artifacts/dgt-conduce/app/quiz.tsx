@@ -47,7 +47,7 @@ export default function QuizScreen() {
     if (mode === 'topic') pool = pool.filter((question) => question.topicId === selectedTopics[0]);
     if (mode === 'group') pool = pool.filter((question) => selectedTopics.includes(question.topicId));
     if (mode === 'review') pool = pool.filter((question) => study.wrongQuestionIds.includes(question.id));
-    const amount = mode === 'exam' ? 30 : mode === 'group' ? 15 : pool.length;
+    const amount = mode === 'exam' ? 30 : mode === 'group' ? 15 : mode === 'topic' ? Math.min(pool.length, 20) : pool.length;
     return shuffle(pool).slice(0, amount);
   }, [mode, selectedTopics.join(','), study.wrongQuestionIds.join(',')]);
 
@@ -233,7 +233,7 @@ export default function QuizScreen() {
           <View style={[styles.explanation, { backgroundColor: selectedIndex === question.correctIndex ? colors.secondary : colors.errorBackground }]}>
             <Text style={[styles.explanationTitle, { color: selectedIndex === question.correctIndex ? colors.primary : colors.destructive }]}>{selectedIndex === question.correctIndex ? 'Correcto' : 'No es correcto'}</Text>
             <Text style={[styles.explanationText, { color: colors.foreground }]}>{question.explanation}</Text>
-            <Text style={[styles.source, { color: colors.mutedForeground }]}>{question.manualTopic} · Manual DGT Permiso B</Text>
+            <Text style={[styles.source, { color: colors.mutedForeground }]}>{question.manualTopic}</Text>
           </View>
         ) : null}
         </Column>

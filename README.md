@@ -32,4 +32,13 @@ pnpm run typecheck
 - `docs/temario/Manual-Permiso-B-Lectura-Facil-DGT.pdf` – Manual del Permiso B en Lectura Fácil (DGT, 2024)
 - `docs/actualizaciones-octubre-2026.md` – novedades del RD 518/2026 y otros cambios de 2026 que el manual no recoge
 
-Preguntas: `artifacts/dgt-conduce/data/questions.ts` (propias, basadas en el Manual DGT del Permiso B; no son preguntas oficiales literales).
+## Banco de preguntas
+
+500 preguntas en `artifacts/dgt-conduce/data/bank/` (una por tema del manual, más `actualidad.ts` y `puntos.ts`). Cada entrada es `[pregunta, respuesta correcta, incorrecta 1, incorrecta 2, explicación]`; `data/questions.ts` las convierte y reparte la posición de la respuesta correcta de forma estable.
+
+| Tema | Preguntas |
+|---|---|
+| Novedades 2026 (RD 518/2026) | 38 |
+| Temas 1–17 del manual y anexo de puntos | 462 |
+
+Son preguntas propias basadas en el Manual DGT del Permiso B (edición 2024) y en las novedades de octubre de 2026; no son preguntas oficiales literales.
