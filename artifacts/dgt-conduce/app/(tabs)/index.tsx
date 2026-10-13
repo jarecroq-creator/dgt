@@ -5,6 +5,7 @@ import { useColors } from '@/hooks/useColors';
 import { useStudy } from '@/state/StudyContext';
 import { ActionButton, Card, Metric, PageTitle } from '@/components/StudyUI';
 import { Grid, ScreenScroll } from '@/components/Screen';
+import { InstallTip } from '@/components/InstallTip';
 import { useBreakpoint } from '@/hooks/useBreakpoint';
 import { questions, topics } from '@/data/questions';
 
@@ -28,6 +29,8 @@ export default function HomeScreen() {
       </View>
 
       <PageTitle eyebrow="Tu preparación" title="Cada test te acerca a aprobar." detail="Estudia a tu ritmo y convierte los fallos en aciertos." />
+
+      <InstallTip />
 
       <View style={[styles.hero, { backgroundColor: colors.primary }, isTablet && styles.heroWide]}>
         <View style={[styles.heroCopy, isTablet && { flex: 1 }]}>

@@ -23,6 +23,7 @@ const MIME_TYPES = {
   '.woff2': 'font/woff2',
   '.ttf': 'font/ttf',
   '.map': 'application/json',
+  '.webmanifest': 'application/manifest+json',
 };
 
 function resolveFile(urlPath) {
