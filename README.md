@@ -27,4 +27,9 @@ En ventanas anchas (≥1024 px) la navegación pasa a un lateral; el contenido s
 pnpm run typecheck
 ```
 
+## Documentación
+
+- `docs/temario/Manual-Permiso-B-Lectura-Facil-DGT.pdf` – Manual del Permiso B en Lectura Fácil (DGT, 2024)
+- `docs/actualizaciones-octubre-2026.md` – novedades del RD 518/2026 y otros cambios de 2026 que el manual no recoge
+
 Preguntas: `artifacts/dgt-conduce/data/questions.ts` (propias, basadas en el Manual DGT del Permiso B; no son preguntas oficiales literales).
