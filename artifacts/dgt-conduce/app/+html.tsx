@@ -5,7 +5,7 @@ const TITLE = '¡¡Vamos Ana!! Conduce DGT · Test del Permiso B';
 const DESCRIPTION = 'Practica para el examen teórico del Permiso B: tests por tema, simulacro tipo DGT y repaso de fallos. Funciona sin conexión.';
 
 // Absolute site URL (needed for the WhatsApp/social preview image). Vercel exposes it at build time.
-const SITE = process.env.SITE_URL ?? (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : '');
+const SITE = process.env.SITE_URL ?? (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'https://dgt-hazel.vercel.app');
 
 const REGISTER_SW = `if ('serviceWorker' in navigator) { window.addEventListener('load', function () { navigator.serviceWorker.register('/sw.js').catch(function () {}); }); }`;
 
